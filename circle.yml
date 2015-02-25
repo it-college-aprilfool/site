@@ -1,7 +1,6 @@
-machine:
-  python:
 dependencies:
   pre:
+    - sudo gem install middleman
     - sudo pip install awscli
     - sudo pip install nose
     - sudo pip install https://bitbucket.org/nmb10/py_w3c/downloads/py_w3c-v0.1.1.tar.gz
