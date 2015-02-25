@@ -9,11 +9,12 @@ dependencies:
     - sudo pip install awscli
     - sudo pip install nose
     - pip install https://bitbucket.org/nmb10/py_w3c/downloads/py_w3c-v0.1.1.tar.gz
-    - wget https://raw.githubusercontent.com/cloneko/travis-html-validation/master/test/test_validator.py
 test:
   override:
   - mv test_validator.py build
   - cd build
+  - pwd
+  - wget https://raw.githubusercontent.com/cloneko/travis-html-validation/master/test/test_validator.py
   - nosetests
   - rm test_validator.py
   - cd ..
