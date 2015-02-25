@@ -18,4 +18,3 @@ test:
   - wget https://raw.githubusercontent.com/cloneko/travis-html-validation/master/test/test_validator.py
   - nosetests
   - rm test_validator.py
-  - cd ..
