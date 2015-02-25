@@ -8,7 +8,7 @@ machine:
 
 test:
   override:
-    - echo 'All tests are assed!!????!'
+    - echo 'All tests are Passed!!????!'
 
 deployment:
   production:
