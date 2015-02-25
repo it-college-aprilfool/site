@@ -1,19 +1,10 @@
 machine:
   ruby:
     version: 2.1.3
-  python:
-    version: 2.7.6
   environment:
     LANG: ja_JP.UTF-8
   timezone:
     Asia/Tokyo
-
-dependencies:
-  pre:
-    - sudo pip install awscli
-    - sudo pip install nose
-    - pip install https://bitbucket.org/nmb10/py_w3c/downloads/py_w3c-v0.1.1.tar.gz
-
 deployment:
   production:
     branch: master
