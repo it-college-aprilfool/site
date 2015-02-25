@@ -1,0 +1,12 @@
+machine:
+  python:
+dependencies:
+  pre:
+    - sudo pip install awscli
+    - sudo pip install nose
+    - sudo pip install https://bitbucket.org/nmb10/py_w3c/downloads/py_w3c-v0.1.1.tar.gz
+    - bundle exec middleman build
+    - wget https://raw.githubusercontent.com/cloneko/travis-html-validation/master/test/test_validator.py
+test:
+  override:
+  - nosetest
