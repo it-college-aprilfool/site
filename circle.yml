@@ -2,7 +2,7 @@ machine:
   ruby:
     version: 1.9.3 
   python:
-    version: 2.76
+    version: 2.7.6
 
 dependencies:
   pre:
