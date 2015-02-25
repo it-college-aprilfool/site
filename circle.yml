@@ -1,17 +1,16 @@
 machine:
   ruby:
-    version: 1.9.3-p547
+    version: 2.1.3
   python:
     version: 2.7.6
 
 dependencies:
   pre:
-    - sudo gem install middleman
     - sudo pip install awscli
     - sudo pip install nose
     - sudo pip install https://bitbucket.org/nmb10/py_w3c/downloads/py_w3c-v0.1.1.tar.gz
-    - bundle exec middleman build
     - wget https://raw.githubusercontent.com/cloneko/travis-html-validation/master/test/test_validator.py
 test:
   override:
+  - bundle exec middleman build
   - nosetest
