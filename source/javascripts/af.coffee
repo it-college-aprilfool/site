@@ -3,9 +3,9 @@ jQuery ->
 
   if (now.getMonth()+1) is 4
     if now.getDate() is 1
-      alert "あいコレ!はじまります!"
+      alert "あうコレ!はじまります!"
       window.location.href = "http://april.it-college.ac.jp/"
     else
-      jQuery('.latestnews').prepend('<li><a href="http://april.it-college.ac.jp/">あいコレ!はじまってます!</a></li>')
+      jQuery('.latestnews').prepend('<li><a href="http://april.it-college.ac.jp/">あうコレ!はじまってます!</a></li>')
   else
     console.log "まだまだ…はじまってないんだからっ!!"
