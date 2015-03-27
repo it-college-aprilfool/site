@@ -72,7 +72,7 @@ configure :build do
 end
 
 activate :s3_sync do |s3_sync|
-  s3_sync.bucket = 'stage.cloneko.com'
+  s3_sync.bucket = 'april.it-college.ac.jp'
   s3_sync.region = 'ap-northeast-1'
   s3_sync.acl = 'public-read'
 end
