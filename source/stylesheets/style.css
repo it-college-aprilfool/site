@@ -3,6 +3,15 @@
 	padding:0
 }
 
+ul {
+  list-style-type:none;
+  overflow:auto;
+}
+
+li {
+  list-style-type:none;
+}
+
 .box {
 	background-image: url(./images/background.png);
 	border:1px solid #cccccc;
