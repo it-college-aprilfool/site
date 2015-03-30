@@ -12,6 +12,7 @@ li {
   list-style-type:none;
 }
 
+/*
 .box {
 	background-image: url(./images/background.png);
 	border:1px solid #cccccc;
@@ -20,10 +21,4 @@ li {
 	text-align:center;
 	width:940px;
 }
-
-#janken {
-	border:2px solid #cccccc;
-	height:400px;
-	margin:70px auto;
-	width:700px;
-}
+*/

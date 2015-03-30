@@ -6,6 +6,12 @@
   border:2px solid #aaa
 }
 
+#janken {
+  height:400px;
+  margin:70px auto;
+  width: 700px;
+}
+
 #game_janken {
   width:50%;
   margin:0;
