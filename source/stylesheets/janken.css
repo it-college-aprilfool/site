@@ -1,4 +1,4 @@
-.aucolle {
+#aucolle {
   width:800px;
   height:480px;
   padding: 10px 20px;
@@ -15,15 +15,6 @@
   position:fixed;
   display:none;
   z-index:2;
-}
-
-#roster {
-  position: fixed;
-  top:0;
-  left:-800px;
-  width:800px;
-  height:280px;
-  background:#E87272;
 }
 
 .enemyhand {
