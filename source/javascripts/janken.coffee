@@ -25,21 +25,23 @@ $ ->
       )
 
     $ ->
+      $("#g").unbind()
+      $("#c").unbind()
+      $("#p").unbind()
       $("#g").click ->
         $("#title").text(judge(choice[0]))
         fadeOutJanken()
       $("#c").click ->
         $("#title").text(judge(choice[1]))
-        fadeOutJanken()
-
+        fadeOutJanken() 
       $("#p").click ->
         $("#title").text(judge(choice[2]))
         fadeOutJanken()
 
-      console.log JSON.parse(localStorage.getItem('teachers'))
 
 
     judge = (my) ->
+      console.log 'call judge'
       enemy = choice[Math.floor(Math.random() * choice.length)]
 
       $('.enemyhand').frameAnimation(loop:false)
@@ -51,25 +53,29 @@ $ ->
 
       table = {g:'c', c:'p', p:'g'}
       switch enemy
-        when table[my] then return dropTeacher('Win')
-        when my then return dropTeacher('Draw')
+        when table[my] then dropTeacher('Win')
+        when my then dropTeacher('Draw')
         else
-          return dropTeacher(null)
+          dropTeacher(null)
 
     dropTeacher = (result) ->
       switch result
-        when 'Win' then teacher = teachers[Math.floor(Math.random() * teachers.length)]
-        when 'Draw' then teacher = teachers[Math.floor(Math.random() * teachers.length)]
-        else teacher = teachers[0]
+        when 'Win'
+          teacher = teachers[Math.floor(Math.random() * teachers.length)]
+          alert '勝った! そして何かドロップしたようだ…'
+        when 'Draw'
+          teacher = teachers[Math.floor(Math.random() * teachers.length)]
+          alert '引き分けだけど…何かドロップしてるよ…?'
+        else
+          teacher = teachers[0]
+          alert '負けだ!しかしtypnが落ちてる!'
       storage[teacher] = true
       localStorage.setItem('teachers', JSON.stringify(storage))
-      alert 'なにかを見つけたよ'
       return teacher
 
   centeringModalSyncer = () ->
     w = $(window).width()
     h = $(window).height()
-    console.log h
 
     pxleft = w / 4
     #pxtop = h / 4
@@ -88,6 +94,4 @@ complete = () ->
   for i in teachers
     if storage[i]
       count++
-    else
-      console.log i
   return ~~(count / teachers.length * 100) + '%'
