@@ -1,6 +1,6 @@
-teachers = [ 'typosone', 'yona', 'omas', 'masami', 'mizobe',
-             'arakaki', 'tyou', 'suzuki', 'okuto', 'akamine',
-             'yamauchi', 'nakazato', 'shiroma', 'sueyoshi']
+-teachers = [ 'tsuyopon', 'akamine', 'arakaki', 'masami', 'mizobe',
+-             'nakazato', 'nohara', 'okuto', 'omas', 'sueyoshi',
+-             'suzuki', 'yamauchi', 'yonashiro']
 storage = null
 $ ->
   storage = JSON.parse(localStorage.getItem('teachers'))
