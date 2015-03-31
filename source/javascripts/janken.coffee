@@ -7,7 +7,7 @@ $ ->
   if storage == null
     storage = { tsuyopon:false, akamine:false, arakaki:false, masami:false, mizobe:false, nakazato:false, nohara:false, okuto:false, omas:false, sueyoshi:false, suzuki:false, yamauchi:false, yonashiro:false}
     localStorage.setItem('teachers', JSON.stringify(storage))
-  $('#comp').text(compleat())
+  $('#comp').text(complete())
 
   $('#gamestart').click ->
     $("#title").text('アザラシじゃんけん')
@@ -81,9 +81,9 @@ $ ->
 
   fadeOutJanken = () ->
     $('#game_janken').fadeOut('slow')
-    $('#comp').text(compleat())
+    $('#comp').text(complete())
 
-compleat = () ->
+complete = () ->
   count = 0
   for i in teachers
     if storage[i]
