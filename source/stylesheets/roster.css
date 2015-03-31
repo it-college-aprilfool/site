@@ -7,7 +7,7 @@
   height: 480px;
   background: #E87272;
   border:2px solid #aaa;
-  z-index:2;
+  z-index:4;
 }
 
 #list {
