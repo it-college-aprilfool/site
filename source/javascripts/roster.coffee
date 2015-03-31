@@ -18,15 +18,15 @@ $ ->
     $('li').click ->
       index = $('li').index(this)
       if storage[teachers[index]]
-        $('#detail').html('<img src="./images/detail_' + teachers[index] + '.png" alt="">')
+        $('#detail').html('<img src="./images/teachers_detail/detail_' + teachers[index] + '.png" alt="">')
 
-  #rosterWindow.click ->
-  #  rosterSlide()
+  $('#exit').click ->
+    rosterSlide()
   rosterSlide = ->
     aucolle.toggleClass('open')
     if aucolle.hasClass('open')
       aucolle.animate({'left' : rosterWidth}, 300)
-      rosterWindow.animate({'left' : 275}, 300)
+      rosterWindow.animate({'left' : 390}, 300)
     else
       $('li').remove()
       rosterWindow.animate({'left' : -rosterWidth}, 300)

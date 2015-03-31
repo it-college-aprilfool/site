@@ -1,24 +1,32 @@
 .roster {
   overflow:hidden;
   position: absolute;
-  top: 76px;
+  top: 70px;
   left: -820px;
   width: 684px;
   height: 404px;
-  background: #E87272;
+  background: #fa9900;
   border:2px solid #aaa;
   z-index:4;
 }
 
-#list {
-  width:220px;
-  height:480px;
-  overflow:auto;
+#box {
   float:left;
 }
 
+#list {
+	background-color:#ffffff;
+  width:215px;
+  height:340px;
+  overflow:auto;
+}
+
+#exit {
+  width:215px;
+}
+
 #detail {
-  width:0px;
+	width:0;
   height:480px;
 }
 
