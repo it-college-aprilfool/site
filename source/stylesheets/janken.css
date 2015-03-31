@@ -1,10 +1,9 @@
-<<<<<<< HEAD
 #aucolle {
-	background-image: url(../images/background.png);
+  background-image: url(../images/background.png);
   border:2px solid #aaa;
   height:480px;
   margin:auto;
-	overflow:hidden;
+  overflow:hidden;
   /*padding: 10px 20px;*/
   width:800px;
 }
@@ -59,14 +58,6 @@
   height:400px;
   margin:70px auto;
   width: 700px;
-=======
-.aucolle {
-  width:800px;
-  height:480px;
-  padding: 10px 20px;
-  margin:auto;
-  border:2px solid #aaa
->>>>>>> master
 }
 
 #game_janken {
@@ -77,10 +68,7 @@
   background:#fff;
   position:fixed;
   display:none;
-<<<<<<< HEAD
   z-index:4;
-=======
-  z-index:2;
 }
 
 #roster {
@@ -90,7 +78,6 @@
   width:800px;
   height:280px;
   background:#E87272;
->>>>>>> master
 }
 
 .enemyhand {
