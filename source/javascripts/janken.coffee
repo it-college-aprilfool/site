@@ -1,11 +1,11 @@
 teachers = [ 'tsuyopon', 'akamine', 'arakaki', 'masami', 'mizobe',
              'nakazato', 'nohara', 'okuto', 'omas', 'sueyoshi',
-             'suzuki', 'yamauchi', 'yonashiro']
+             'suzuki', 'yamauchi', 'yonashiro', 'kocho']
 storage = null
 $ ->
   storage = JSON.parse(localStorage.getItem('teachers'))
   if storage == null
-    storage = { tsuyopon:false, akamine:false, arakaki:false, masami:false, mizobe:false, nakazato:false, nohara:false, okuto:false, omas:false, sueyoshi:false, suzuki:false, yamauchi:false, yonashiro:false}
+    storage = { tsuyopon:false, akamine:false, arakaki:false, masami:false, mizobe:false, nakazato:false, nohara:false, okuto:false, omas:false, sueyoshi:false, suzuki:false, yamauchi:false, yonashiro:false, kocho: false}
     localStorage.setItem('teachers', JSON.stringify(storage))
   $('#comp').text(complete())
 

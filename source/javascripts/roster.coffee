@@ -1,7 +1,7 @@
 $ ->
   teachers = [ 'tsuyopon', 'akamine', 'arakaki', 'masami', 'mizobe',
                'nakazato', 'nohara', 'okuto', 'omas', 'sueyoshi',
-               'suzuki', 'yamauchi', 'yonashiro']
+               'suzuki', 'yamauchi', 'yonashiro', 'kocho']
   rosterWindow = $('.roster')
   aucolle = $('#aucolle')
   rosterWidth = rosterWindow.outerWidth()
