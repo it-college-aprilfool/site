@@ -1,9 +1,57 @@
 #aucolle {
-  width:800px;
+	background-image: url(../images/background.png);
+  border:2px solid #aaa;
   height:480px;
-  padding: 10px 20px;
   margin:auto;
-  border:2px solid #aaa
+	overflow:hidden;
+  /*padding: 10px 20px;*/
+  width:800px;
+}
+
+#frame {
+	position:absolute;
+	z-index:2;
+}
+
+#head-btn {
+	left:-35px;
+	position:relative;
+	top:-24px;
+	z-index:2;
+}
+
+#comp {
+	left:700px;
+	position:relative;
+	top:-115px;
+	z-index:2;
+}
+
+#contents {
+	height:400px;
+	left:116px;
+	position:relative;
+	top:-100px;
+	width:670px;
+}
+
+#nav {
+	height:300px;
+	position:relative;
+	top:30px;
+	width:330px;
+	z-index:3;
+}
+
+#nav > img {
+	padding-right:10px;
+}
+
+#teacher {
+	position:relative;
+	right:-200px;;
+	top:-290px;
+	z-index:1;
 }
 
 #janken {
@@ -20,7 +68,7 @@
   background:#fff;
   position:fixed;
   display:none;
-  z-index:2;
+  z-index:4;
 }
 
 .enemyhand {
