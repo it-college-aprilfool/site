@@ -28,7 +28,6 @@ $ ->
       $("#g").click ->
         $("#title").text(judge(choice[0]))
         fadeOutJanken()
-
       $("#c").click ->
         $("#title").text(judge(choice[1]))
         fadeOutJanken()
@@ -64,6 +63,7 @@ $ ->
         else teacher = teachers[0]
       storage[teacher] = true
       localStorage.setItem('teachers', JSON.stringify(storage))
+      alert 'なにかを見つけたよ'
       return teacher
 
   centeringModalSyncer = () ->
