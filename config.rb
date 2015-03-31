@@ -76,3 +76,5 @@ activate :s3_sync do |s3_sync|
   s3_sync.region = 'ap-northeast-1'
   s3_sync.acl = 'public-read'
 end
+
+activate :imageoptim

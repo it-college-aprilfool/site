@@ -15,4 +15,5 @@ gem "tzinfo-data", platforms: [:mswin, :mingw]
 
 gem "slim"
 gem "middleman-s3_sync"
+gem "middleman-imageoptim"
 
