@@ -7,7 +7,6 @@ html
     script src="//code.jquery.com/jquery-2.1.3.min.js"
     == stylesheet_link_tag "normalize", "all", "janken", "roster", 'style'
     == javascript_include_tag  "all" 
-    == partial "ga.txt"
   body class="page_classes"
     == yield 
     div class="news" id="from_it-college"
@@ -17,3 +16,4 @@ html
           a> href="http://www.it-college.ac.jp/27-info/228-recruit150326.html" target="_blank" 日本語講師募集のご案内
         li
           a> href="http://www.it-college.ac.jp/10-night/226-yakanmassage1-2.html" target="_blank" 夜間ITエンジニア科に出願された学生さんたち
+    == partial "ga.txt"
