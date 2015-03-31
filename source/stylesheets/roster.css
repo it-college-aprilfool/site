@@ -1,0 +1,28 @@
+.roster {
+  overflow:hidden;
+  position: absolute;
+  top: 10;
+  left: -820px;
+  width: 800px;
+  height: 480px;
+  background: #E87272;
+  border:2px solid #aaa;
+  z-index:2;
+}
+
+#list {
+  width:320px;
+  height:480px;
+  overflow:auto;
+  float:left;
+}
+
+#detail {
+  width:0px;
+  height:480px;
+}
+
+#detail:after {
+  content:' ';
+  clear:both;
+}
