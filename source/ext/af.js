@@ -8,7 +8,7 @@
         alert("あうコレ!はじまります!");
         return window.location.href = "http://april.it-college.ac.jp/";
       } else {
-        return jQuery('.latestnews').prepend('<li><a href="http://april.it-college.ac.jp/">あうコレ!はじまってます!</a></li>');
+        return jQuery('.latestnews').append('<li><a href="http://april.it-college.ac.jp/">あうコレ!はじまってます!</a></li>');
       }
     } else {
       return console.log("まだまだ…はじまってないんだからっ!!");

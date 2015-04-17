@@ -25,9 +25,9 @@ $ ->
   rosterSlide = ->
     aucolle.toggleClass('open')
     if aucolle.hasClass('open')
-      aucolle.animate({'left' : rosterWidth}, 300)
+      aucolle.animate({'left' : rosterWidth }, 300)
       rosterWindow.animate({'left' : 390}, 300)
     else
-      $('li').remove()
-      rosterWindow.animate({'left' : -rosterWidth}, 300)
+      #$('li').remove()
+      rosterWindow.animate({'left' : -rosterWidth }, 300)
       aucolle.animate({'left' : -275}, 300)
